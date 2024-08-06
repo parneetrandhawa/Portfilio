@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parneet </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 30);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(43, 84, 126);
+            height: 80px;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+            color: bisque;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(151, 151, 255);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+
+        .leftsection .buttons {
+            padding: 50px;
+        }
+
+        .leftsection .btn {
+            padding: 10px;
+            background: rgb(3, 3, 49);
+            color: beige;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection .btn:hover {
+            color: blueviolet;
+        }
+
+        .rightsection img {
+            width: 90%;
+        }
+
+        .pink {
+            color: rgb(112, 80, 255);
+        }
+
+        .text-yellow {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(112, 80, 255);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.8rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+
+        .secondsection .vertical {
+            height: 84px;
+            width: 1px;
+            background-color: antiquewhite;
+            margin: 0 240px;
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 60px;
+            width: 180px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 84px;
+            color: grey;
+            width: 180px;
+            font-size: 12px;
+        }
+
+        .footer-rights{
+            margin:  300px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Parneet Portfolio </div>
+            <div class="right">
+                <ul>
+
+                    <li class="nav-item"><a href="/Intro.html" class="nav-link"><span>Intro</span></a></li>
+                    <li class="nav-link"><a href="/Projects.html" class="nav-link"><span>Projects</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="pink">Parneet Kaur</span>
+                <div> and I am passionate </div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="images/resume.pdf">
+                        <button class="btn">Open Resume</button></a>
+                    <a href="https://github.com/parneetrandhawa">
+                        <button class="btn">Github</button></a>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="pic.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-yellow">
+                What I have done so far
+            </span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/telecaller.jfif" alt="">
+                    <div class="vertical-title">
+                        Telecaller (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Telecallers are representatives who contact existing clients and prospects to generate sales. A
+                        telecaller is responsible for selling a product or service and answering customer queries over
+                        the phone.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/developer.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer (2024)
+                    </div>
+                    <div class="vertical-desc">
+                        A web developer is a programmer who develops World Wide Web applications using a client–server
+                        model. The applications typically use HTML, CSS, and JavaScript in the client, and any
+                        general-purpose programming language in the server.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-rights">
+            Copyright&#169;parneetportfolio.com | All rights reserverd
+            <a href="https://github.com/parneetrandhawa">github</a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
